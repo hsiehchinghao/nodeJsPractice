@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>hello world</h1>
+    <!-- <form action="/example" method="get">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name">
+        <label for="age">年齡:</label>
+        <input type="number" id="age" name="age">
+        <button>submit!</button>
+    </form> -->
+
+    <table>
+        <thead>
+            <th>名稱</th>
+            <th>評價</th>
+            <th>熱門</th>
+            <th>趨勢</th>
+        </thead>
+        <tbody>
+        <% languages.forEach(lang => { %>
+        <tr>
+            <td><%- lang.name %></td>
+            <td><%- lang.rating %></td>
+            <td><%- lang.popularity %></td>
+            <td><%- lang.trends %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+    </table>
+</html> 
